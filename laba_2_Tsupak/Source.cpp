@@ -96,10 +96,10 @@ void AAA() {
 }
 
 
-void Gauss(int k, double Matrix[n][n+1]) {
+void Gauss(int k, double Matrix[n][n + 1]) {
 	if (Matrix[k][k] != 1) {
 		double T = Matrix[k][k];
-		for (int j = k; j < n+1; j++) {
+		for (int j = k; j < n + 1; j++) {
 			Matrix[k][j] = Matrix[k][j] / T;
 		}
 	}
@@ -107,7 +107,7 @@ void Gauss(int k, double Matrix[n][n+1]) {
 		if ((Matrix[i][k] != 0.0) && (i != k)) {
 			double T = Matrix[i][k];
 			Matrix[i][k] = 0.0;
-			for (int j = k + 1; j < n+1; j++) {
+			for (int j = k + 1; j < n + 1; j++) {
 				Matrix[i][j] -= Matrix[k][j] * T;
 			}
 		}

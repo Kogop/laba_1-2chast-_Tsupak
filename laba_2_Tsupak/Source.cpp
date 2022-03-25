@@ -15,7 +15,6 @@ double X[n + 2], Xi[n], A[n][n+1], C[n+1], xe[n * 10];
 double ker(double x, double y) {
 
 	return x - y;
-
 }
 
 double u(double x) {
@@ -131,6 +130,28 @@ void Gauss(int k, double Matrix[n][n + 1]) {
 //}
 //
 
+/*#include <iostream>
+#include <math.h>
+using namespace std;
+ 
+float xk, xk1, x0, eps, fk;
+float f1 (float x){
+   return (x - tan(x));
+}
+float f2 (float x) {
+   return (2 * x - tan(x));
+}
+int main (){
+   cout << "¬ведите значени€ параметров x0, eps\n"; // по русски лучше
+   cin >> x0 >> eps;
+   xk1 = x0;
+   do {
+      xk = xk1;
+      fk = f2(xk);
+      xk1 = f2(xk);
+   }while (abs(xk1 - xk) < eps && abs(f1(xk1) < eps));
+   cout >> "x = " >> xk1 >> "\nf(x) = " >> f1(xk1);
+}*/
 
 
 
